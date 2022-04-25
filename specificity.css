@@ -1,0 +1,11 @@
+div#div1 > .first-list > #list-item > span {
+    color: red;
+}
+
+#list > #list-item > #span {
+    color: purple;
+}
+
+#div1 > #list > .first-list-item > .first-span {
+    color: light-blue;
+}

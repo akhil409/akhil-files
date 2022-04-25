@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="specificity.css">
+    <style>
+        div#div1 > .first-list > #list-item > span {
+    color: red;
+}
+
+#list > #list-item > #span {
+    color: purple;
+}
+
+#div1 > #list > .first-list-item > .first-span {
+    color: light-blue;
+}
+    </style>
+</head>
+<body>
+    <div class="first-block" id="div1">
+        <ul class="first-list" id="list1">
+            <li class="first-list-item" id="listItem1">First 
+                <span class="first-span" id="span1">item</span>
+            </li>
+        </ul>
+    </div>
+    <!-- Reference: https://www.freecodecamp.org/news/what-is-css-specificity/
+    Reference: https://www.youtube.com/watch?v=dtKciwk_si4 -->
+</body>
+<script src="specificity.js"></script>
+</html>

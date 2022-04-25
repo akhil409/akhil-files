@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="mous">On Mouse Move</button> -->
+
+    <form action="">
+        <input type="button" onclick="sayHello()" value="Click Here..!">
+    </form>
+    <br/>
+<!-- On-Mouse-Over Event -->
+    <div style="background-color:cadetblue">
+        <h1>On-Mouse-Over Event </h1>
+        Name:  <input type="text" onmouseover="alert('Hey Click on the button')" id="fullname" class="tect"> <br/> <br/>
+
+    <input type="button" id="btn1" onclick="changeBgc()" value="Change-Color">  <!--onclick="alert('CLicked')"-->
+    <br/> <br/>
+    </div>
+
+<!-- Event Pointer Checking -->
+     <div style="background-color:brown">
+        <h1> Event Pointer Checking </h1>
+        <button type="button" onclick="handleClick()">Button</button>
+     </div>
+
+     <div style="background-color: aqua;">
+          <h1>On-Click Event</h1>
+<!-- //onClick Event -->
+           <input  type="button" value="Change Background Color" id='btn2'>   <!--onmouseover="alert('Hey Click on the button')"-->
+     </div>
+     
+<!-- Double Click Event -->
+     <div style="background-color: burlywood;">
+        <h1>On-Double-Click Event</h1>
+        <button  type="button" ondblclick="alertMsg()">Click to get the Date and Time</button>
+        <p id="dt">Hello</p>   
+     </div>
+
+<!-- ON-Submit Event using in Form -->
+     <div style="background-color:grey">
+     <h1>On-Submit Event</h1>
+     <form id="form">
+         <input type="text" id="username" placeholder="Username" required>
+         <input type="email" id="email" placeholder="E-Mail" required> <br> <br>
+          <button type="submit" value="Register">Register</button> <!-- <input type="submit" value="Register"> -->
+          <button type="button" id="bt">Reset</button>
+        </form>
+    </div>
+<!-- ON-Change Event using in Form -->
+    <div style="background-color:darkgoldenrod" >
+        <h1>On-Change-Event</h1>
+        <select name="" id="" onchange="onChangeEvent(this.value)">
+            <option value="White">Select a Color</option>
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+            <option value="Brown">Brown</option>
+        </select>
+    </div>
+<!-- Reset Event
+<div style="background-color:greenyellow">
+    <h1>Reset Event</h1>
+    <form id="form1">
+        <input type="text" id="username1" placeholder="Username" required>
+        <input type="email" id="email1" placeholder="E-Mail" required> <br> <br>
+         <button type="submit" value="Register">Register</button> <!-- <input type="submit" value="Register"> -->
+    </form>
+   </div> -->
+
+
+    <script>
+
+        function alertMsg() {
+            document.getElementById('dt').innerHTML=Date()
+        }
+
+        function pageLoaded(){
+            alert("Page Loaded successfully");
+        }
+
+        function handleClick() {
+            console.log("Button clicked");
+            console.log(event)
+        }
+
+        let btn3=document.getElementById('btn2');
+            btn3.addEventListener('click',change1)
+
+            function change1(){
+            document.body.style.backgroundColor='red'
+            }
+
+        function onChangeEvent(x) {
+            document.bgColor=x;
+        }
+// KeyDown Event
+        window.addEventListener('keydown',keyd)
+        function keyd(key) {
+            if(key.keyCode=="65"){  //no problem if we remove quotes ""
+               alert("The a letter key has been pressed")
+            }
+        }
+
+// KeyUP Event
+        window.addEventListener('keyup',keyu)
+        function keyu(key) {
+            if(key.keyCode=="66"){  //no problem if we remove quotes ""
+               alert("The a letter key has been pressed")
+            }
+        }
+// // KeyPress Event
+// window.addEventListener('keypress',keyp)
+//         function keyp(key) {
+//             if(key.keyCode=="97"){  //no problem if we remove quotes "" //97 is the ASCII key code for lowercase - ASCII code 65 = A ( Capital letter A ) ASCII code 66 = B ( Capital letter B )
+//                alert("The a letter key has been pressed")
+//             }
+//         }
+
+// Form-Reset Event 
+// let inp=document.querySelectorAll('input')
+// let bt=document.querySelector('button')
+// inp.addEventListener('click',()=>{
+//     inputs.forEach(input=>{
+//         input.value=""
+//     })
+// })
+
+let inpt=document.getElementById('username')
+let btnClear=document.getElementById('bt')
+btnClear.addEventListener('reset ',()=>{
+    inpt.forEach(inpt=>{
+        inpt.value=''
+    })
+})
+
+    </script>
+</body>
+
+<script type="text/javascript" src="eventsJava.js"></script>
+
+</html>

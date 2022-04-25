@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .democlass{
+        color: blueviolet;
+    }
+</style>
+<body style="background-color: aquamarine;">
+    <h1>Get Element By ID Method</h1>
+    <form name="fform">
+        <label for="">Enter Name:</label>
+        <input type="text" name="fname" id="fname"> <br/>
+        <input type="button" onclick="squarNum()" value="Send">
+    </form>
+<hr>
+    <h1>Get Elements By Name Method</h1>
+    <form>        
+        <input type="radio" name="gender" value="Male"> Male <br/>
+        <input type="radio" name="gender" value="Female"> Female <br/>
+        <input type="button" onclick="myfnname()" value="Send" >
+    </form>
+<hr>
+    <h1>Get Elements By Class Name Method</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+    <p class="para">Quo laborum quia eius minus, pariatur autem.</p> 
+    <p class="para">Quisquam cumque cum maiores veniam animi reiciendis pariatur veritatis voluptates illum iste?</p>
+    <p>Velit.Praesentium saepe?</p>  
+    <input type="button" onclick="classpara()" value="Click"> 
+<hr>
+    <h1>Get Elements By Tag Name Method</h1>
+    <h4>Hi Everyone</h4>
+    <h4>In this Heading elements</h4>
+    <h4>Here we are going to count total number of heading elements by getElementByTagName() method.</h4>
+    <h4>so,lets see</h4>
+    <input type="button" onclick="tagName1()" value="Count">
+<hr>
+   <h1 id="setAtt">Set Attribute Method</h1>
+   <button onclick="setAttri()">Click</button>
+    <br/> <br/>
+   <a id="setAttri1" target="_blank">Set Attribute1</a>   <br/><br/>
+   <button onclick="setAttri1()">Add a Attribute</button>
+   <br/><br/>
+   <input type="text" id="change" value="Button"> <br/><br/>
+   <button onclick="changeAttri()">Change</button>
+   <br/><br/>
+   <h4>Disabling the button </h4>
+   <button onclick="dis()" id="disab">Disable Button</button>
+<hr>
+    <h1>Get Attribute Method</h1>
+    <div id="getatt1" style="font-size: 25px;color: green;border: 2px solid red;">First Div Element</div><br/>
+    <div id="getatt2" style="font-size: 25px;color: blue;border: 2px solid palevioletred;">Second Div Element</div><br/>
+    <button onclick="getAttri()">Click Here..!</button>
+    <p id="p1"></p>
+    <p id="p2"></p>   
+<hr>
+    <h1>Add Event Listener Method</h1>
+    <button id="addEl">Get Data</button>
+    <p id="addE2"></p>
+<hr>
+  <div id="creatEl">
+    <h1>Create Element Method</h1>  
+    <button onclick="createEle()" >Create Button</button>
+  </div>
+   
+<hr>
+    <h1>Append Child Method</h1>
+    <ul id="languages">
+        <li>Angular Developer</li>
+        <li>.Net Developer</li>
+        <li>Java Developer</li>
+    </ul>
+    <button onclick="appChild()">Append Child</button>
+<hr>
+  <h1>Append Method</h1>
+  <div id="app1"></div>
+  <button onclick="appHtml()">Append</button>
+<hr>
+    <!-- <h1>Query Selector All</h1>
+    <h3 class="hqselect">Hello world...!</h3>
+    <p class="pqselect">Hello world...!</p>
+    <h3 class="hqselect1">Hello world...!</h3>
+    <p class="pqselect1">Hello world...!</p>
+    <div id="dqselect">Hello world...!</div> -->
+
+</body>
+<script type="text/javascript" src="javascriptMethods.js"></script>
+</html>

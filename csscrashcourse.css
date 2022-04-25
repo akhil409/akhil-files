@@ -1,0 +1,116 @@
+/*External CSS*/
+h3{
+    color:blueviolet;
+}
+
+/* Id selctor */
+#css-course1 {
+       color: crimson;
+}
+
+/* Class selctor */
+.css-course2 {
+          color:darkgoldenrod;
+}
+
+/* element selctor */
+body{
+    background-color: darksalmon;
+}
+
+/* Universal Selector */
+*{
+    color: brown
+}
+
+/* Background colors*/
+.orange{
+    background-color: orangered;
+        
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+/*Font Styles*/
+.font-styles{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+    font-weight: bold;
+    text-decoration:underline;
+    font-size: 50px;
+}
+/*Listing stles*/
+
+/*.box-model{
+    border: 1px solid black;
+    height: 50px;
+    width: 500px;
+    padding:20px;
+    margin:50px;
+    
+}
+*/
+
+.box-model{
+    border: 1px solid black;
+    width: 150px;
+    height:100px;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 10px 40px 40px 10px;    
+    
+}
+
+/*CSS Positions like relative,absolute, fixed*/
+
+.parent{
+    position: relative;
+    background-color:whitesmoke;
+    border: 2px black;
+}
+
+/*Absolute is touches to the exact point*/
+.child1{
+    position: absolute;
+    top: 0px;
+    padding-right: 1000px;
+    background-color: black;
+    border:1px chartreuse;
+}
+
+.child2{
+    position: fixed;
+    top:40px;
+    border:1px chartreuse;
+}
+
+.child3{
+    position: sticky;
+    top:1px;
+    background-color: yellow;
+    border:1px chartreuse;
+}
+
+/*Display Properties*/
+
+a:hover{
+    background-color:blue ; 
+}
+
+a{
+    text-decoration: none;
+    display:inline ;
+    
+}
+
+/*Flex container*/
+
+.flex-container{
+    background-color: aqua;
+    display:flex ;
+    flex-wrap:wrap-reverse;
+    justify-content: center;
+    
+}
